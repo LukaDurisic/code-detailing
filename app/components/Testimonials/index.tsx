@@ -13,30 +13,32 @@ export default function Testimonials() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
 
+  const source = t("testimonials.googleReview");
+
   const testimonials = [
     {
-      key: "marko",
-      name: "Marko P.",
-      vehicle: "Audi RS6 Avant",
+      key: "slaven",
+      name: "Slaven Knežević",
+      source,
       rating: 5,
-      text: t("testimonials.marko.text"),
-      translation: t("testimonials.marko.translation"),
+      text: t("testimonials.slaven.text"),
+      translation: t("testimonials.slaven.translation"),
     },
     {
-      key: "ivan",
-      name: "Ivan K.",
-      vehicle: "BMW M4 Competition",
+      key: "matija",
+      name: "Matija Petanjak",
+      source,
       rating: 5,
-      text: t("testimonials.ivan.text"),
-      translation: t("testimonials.ivan.translation"),
+      text: t("testimonials.matija.text"),
+      translation: t("testimonials.matija.translation"),
     },
     {
-      key: "ana",
-      name: "Ana S.",
-      vehicle: "Mercedes-Benz GLE Coupé",
+      key: "josip",
+      name: "Josip Kretonić",
+      source,
       rating: 5,
-      text: t("testimonials.ana.text"),
-      translation: t("testimonials.ana.translation"),
+      text: t("testimonials.josip.text"),
+      translation: t("testimonials.josip.translation"),
     },
   ];
 
@@ -70,7 +72,14 @@ export default function Testimonials() {
 
       <div className={styles.grid}>
         {testimonials.map((testimonial) => (
-          <div key={testimonial.key} data-testimonial-card className={styles.card}>
+          <a
+            key={testimonial.key}
+            data-testimonial-card
+            className={styles.card}
+            href="https://www.google.com/maps/place/CODE+detailing/@45.3111022,18.3984254,753m/data=!3m1!1e3!4m8!3m7!1s0x475c55c2bc30fb87:0x1176e0d1d3849b1!8m2!3d45.3111022!4d18.4010057!9m1!1b1!16s%2Fg%2F11t8f4f5tv"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className={styles.stars}>
               {Array.from({ length: testimonial.rating }).map((_, i) => (
                 <Star key={i} size={14} className={styles.starIcon} />
@@ -84,9 +93,9 @@ export default function Testimonials() {
 
             <div className={styles.author}>
               <p className={styles.authorName}>{testimonial.name}</p>
-              <p className={styles.authorVehicle}>{testimonial.vehicle}</p>
+              <p className={styles.authorSource}>{testimonial.source}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

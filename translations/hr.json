@@ -26,7 +26,7 @@
     "paintCorrection": {
       "title": "Korekcija laka",
       "description": "Višefazno strojno poliranje s mjerenjem dubine laka u svakom prolazu. Vrtložni tragovi, ogrebotine i oksidacija eliminirani kirurškom preciznošću.",
-      "statusLabel": "Koriguje se"
+      "statusLabel": "Korekcija"
     },
     "ppf": {
       "title": "Zaštitna folija za lak",
@@ -74,17 +74,18 @@
     "label": "Recenzije",
     "title": "Povjerenje",
     "titleAccent": "entuzijasta.",
-    "marko": {
-      "text": "Nevjerojatan rezultat. David je posvetio čitav dan mom RS6 — keramička zaštita izgleda fenomenalno, a boja sjaji kao nikad prije. Topla preporuka!",
-      "translation": "Incredible result. David dedicated a full day to my RS6 — the ceramic coating looks phenomenal and the paint shines like never before."
+    "googleReview": "Google recenzija",
+    "slaven": {
+      "text": "Veoma sam zadovoljan pruženom uslugom. Uradili smo ozon, vanjsko pranje i zaštitu voskom, te unutrašnje detaljno čišćenje. Svaka čast na temeljitosti i strpljenju. Pristupačna cijena, ljubazan vlasnik, zavidan nivo komunikacije.",
+      "translation": "Very satisfied with the service. We did ozone treatment, exterior wash with wax protection, and full interior detailing. Hats off to the thoroughness and patience. Affordable price, friendly owner, exceptional level of communication."
     },
-    "ivan": {
-      "text": "Korekcija laka u tri faze potpuno je uklonila vrtložne tragove. Profesionalni pristup od početka do kraja — CODE je jedini detailer kojem povjeravam svoj auto.",
-      "translation": "Three-stage paint correction completely removed all swirl marks. Professional approach start to finish — CODE is the only detailer I trust with my car."
+    "matija": {
+      "text": "Odlična usluga poliranja farova, pedantno i kvalitetno, sve preporuke 🙂",
+      "translation": "Excellent headlight polishing service — meticulous and high quality. Highly recommended 🙂"
     },
-    "ana": {
-      "text": "PPF na prednjem dijelu plus keramika na cijelom autu. Rezultat premašuje očekivanja. Preporučujem svima koji traže premium uslugu u Hrvatskoj.",
-      "translation": "PPF on the front end plus full ceramic coating. Result exceeds expectations. Recommend to anyone seeking premium service in Croatia."
+    "josip": {
+      "text": "Čestitam na obavljenom poslu, auto je perfektno popravljen... najbolji auto detalj u gradu, a cijene su super.",
+      "translation": "Congrats on the work done — the car is perfectly restored. The best auto detailer in town, and prices are great."
     }
   },
   "pricing": {
@@ -127,7 +128,7 @@
     }
   },
   "footer": {
-    "brandDescription": "Premium auto detailing od Davida Salopeka. Gdje preciznost susreće umjetnost — svako vozilo, remek-djelo.",
+    "brandDescription": "Premium auto detailing Davida Salopeka. Gdje preciznost susreće umjetnost — svako vozilo, remek-djelo.",
     "servicesTitle": "Usluge",
     "ceramicCoating": "Keramička prevlaka",
     "paintCorrection": "Korekcija laka",

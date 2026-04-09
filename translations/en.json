@@ -74,16 +74,17 @@
     "label": "Testimonials",
     "title": "Trusted by",
     "titleAccent": "enthusiasts.",
-    "marko": {
-      "text": "Incredible result. David dedicated a full day to my RS6 — the ceramic coating looks phenomenal and the paint shines like never before. Highly recommended!",
+    "googleReview": "Google Review",
+    "slaven": {
+      "text": "Very satisfied with the service. We did ozone treatment, exterior wash with wax protection, and full interior detailing. Hats off to the thoroughness and patience. Affordable price, friendly owner, exceptional level of communication.",
       "translation": ""
     },
-    "ivan": {
-      "text": "Three-stage paint correction completely removed all swirl marks. Professional approach start to finish — CODE is the only detailer I trust with my car.",
+    "matija": {
+      "text": "Excellent headlight polishing service — meticulous and high quality. Highly recommended 🙂",
       "translation": ""
     },
-    "ana": {
-      "text": "PPF on the front end plus full ceramic coating. Result exceeds expectations. Recommend to anyone seeking premium service in Croatia.",
+    "josip": {
+      "text": "Congrats on the work done — the car is perfectly restored. The best auto detailer in town, and prices are great.",
       "translation": ""
     }
   },

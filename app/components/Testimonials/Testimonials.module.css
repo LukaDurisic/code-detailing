@@ -90,6 +90,16 @@
   padding: 1.75rem;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 300ms, transform 300ms, background 300ms;
+}
+
+.card:hover {
+  border-color: rgba(201, 168, 76, 0.25);
+  background: rgba(42, 42, 53, 0.55);
+  transform: translateY(-2px);
 }
 
 @media (min-width: 640px) {
@@ -138,7 +148,7 @@
   font-size: 0.875rem;
 }
 
-.authorVehicle {
+.authorSource {
   color: rgba(201, 168, 76, 0.4);
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;

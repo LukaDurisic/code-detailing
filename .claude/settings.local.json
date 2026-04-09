@@ -35,7 +35,10 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(npx tsc:*)",
-      "Bash(echo \"EXIT: $?\")"
+      "Bash(echo \"EXIT: $?\")",
+      "WebFetch(domain:www.google.com)",
+      "mcp__chrome-devtools__wait_for",
+      "mcp__chrome-devtools__close_page"
     ]
   }
 }
