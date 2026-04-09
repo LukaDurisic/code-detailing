@@ -1,0 +1,244 @@
+.section {
+  position: relative;
+  padding-top: 7rem;
+}
+
+@media (min-width: 640px) {
+  .section {
+    padding-top: 9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: 11rem;
+  }
+}
+
+.header {
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto 4rem;
+}
+
+@media (min-width: 640px) {
+  .header {
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 0 5rem;
+  }
+}
+
+.label {
+  color: var(--champagne);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: var(--ivory);
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.titleAccent {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--champagne);
+}
+
+.stepContainer {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .stepContainer {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stepContainer {
+    padding: 0 4rem;
+  }
+}
+
+.stepCard {
+  width: 100%;
+  max-width: 1200px;
+  background: var(--slate);
+  border-radius: 2rem;
+  border: 1px solid rgba(201, 168, 76, 0.1);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  box-shadow: 0 25px 50px -12px rgba(13, 13, 18, 0.4);
+}
+
+@media (min-width: 640px) {
+  .stepCard {
+    border-radius: 3rem;
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .stepCard {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stepCard {
+    padding: 5rem;
+  }
+}
+
+.animationContainer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+}
+
+@media (min-width: 640px) {
+  .animationContainer {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+.stepContent {
+  flex: 1;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .stepContent {
+    text-align: left;
+  }
+}
+
+.stepNumber {
+  color: rgba(201, 168, 76, 0.4);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.stepTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--ivory);
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 640px) {
+  .stepTitle {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stepTitle {
+    font-size: 3rem;
+  }
+}
+
+.stepDescription {
+  color: rgba(250, 248, 245, 0.5);
+  font-size: 0.875rem;
+  line-height: 1.625;
+  max-width: 32rem;
+}
+
+@media (min-width: 640px) {
+  .stepDescription {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stepDescription {
+    font-size: 1.125rem;
+  }
+}
+
+/* SVG animations */
+.rotatingSvg {
+  width: 8rem;
+  height: 8rem;
+  opacity: 0.3;
+}
+
+@media (min-width: 640px) {
+  .rotatingSvg {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
+.laserContainer {
+  position: relative;
+  width: 8rem;
+  height: 11rem;
+  opacity: 0.3;
+}
+
+@media (min-width: 640px) {
+  .laserContainer {
+    width: 11rem;
+    height: 13rem;
+  }
+}
+
+.laserSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.waveformSvg {
+  width: 11rem;
+  opacity: 0.3;
+}
+
+@media (min-width: 640px) {
+  .waveformSvg {
+    width: 15rem;
+  }
+}

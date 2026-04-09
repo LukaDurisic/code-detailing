@@ -1,0 +1,242 @@
+.nav {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  width: 92vw;
+  max-width: 1050px;
+  transition: all 700ms ease-out;
+  border-radius: 9999px;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 640px) {
+  .nav {
+    padding: 1.5rem 4rem;
+    gap: 2rem;
+  }
+}
+
+.navScrolled {
+  background: rgba(250, 248, 245, 0.7);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  box-shadow: 0 25px 50px -12px rgba(13, 13, 18, 0.2);
+}
+
+/* Brand */
+.brand {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  transition: color 700ms;
+  white-space: nowrap;
+  color: var(--ivory);
+}
+
+@media (min-width: 640px) {
+  .brand {
+    font-size: 1.125rem;
+  }
+}
+
+.brandScrolled {
+  color: var(--obsidian);
+}
+
+/* Desktop nav links container */
+.desktopLinks {
+  display: none;
+  align-items: center;
+  gap: 1.75rem;
+  flex: 1;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .desktopLinks {
+    display: flex;
+  }
+}
+
+/* Nav link */
+.navLink {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: color 500ms;
+  color: rgba(250, 248, 245, 0.6);
+}
+
+.navLink:hover {
+  color: var(--champagne);
+}
+
+.navLinkScrolled {
+  color: rgba(42, 42, 53, 0.7);
+}
+
+.navLinkScrolled:hover {
+  color: var(--champagne);
+}
+
+/* Phone */
+.phone {
+  display: none;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: color 500ms;
+  white-space: nowrap;
+  color: rgba(250, 248, 245, 0.5);
+}
+
+@media (min-width: 768px) {
+  .phone {
+    display: inline-flex;
+  }
+}
+
+.phone:hover {
+  color: var(--champagne);
+}
+
+.phoneScrolled {
+  color: rgba(42, 42, 53, 0.6);
+}
+
+.phoneScrolled:hover {
+  color: var(--champagne);
+}
+
+/* CTA button */
+.cta {
+  display: none;
+  align-items: center;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--champagne);
+  color: var(--obsidian);
+  position: relative;
+  z-index: 10;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 1024px) {
+  .cta {
+    display: inline-flex;
+  }
+}
+
+.ctaBg {
+  background: var(--champagne-glow);
+  border-radius: 9999px;
+}
+
+.ctaText {
+  position: relative;
+  z-index: 10;
+}
+
+/* Mobile hamburger */
+.hamburger {
+  display: block;
+  margin-left: auto;
+  transition: color 500ms;
+  color: var(--ivory);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburgerScrolled {
+  color: var(--obsidian);
+}
+
+/* Mobile menu */
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 1rem;
+  right: 1rem;
+  margin-top: 0.75rem;
+  background: rgba(250, 248, 245, 0.95);
+  backdrop-filter: blur(40px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 1024px) {
+  .mobileMenu {
+    display: none;
+  }
+}
+
+.mobileLink {
+  color: var(--slate);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: color 300ms;
+}
+
+.mobileLink:hover {
+  color: var(--champagne);
+}
+
+.mobilePhone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(42, 42, 53, 0.6);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 300ms;
+}
+
+.mobilePhone:hover {
+  color: var(--champagne);
+}
+
+.mobileCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--champagne);
+  color: var(--obsidian);
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
