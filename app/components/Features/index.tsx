@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Shield, Paintbrush, Film } from "lucide-react";
@@ -10,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 /* ─── Card 1: Water Beading Animation (Ceramic Coating) ─── */
 function WaterBeading() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const dropletsRef = useRef<
     { x: number; y: number; r: number; vy: number; opacity: number }[]
@@ -20,6 +22,8 @@ function WaterBeading() {
     if (!canvas) return;
     const ctx = canvas.getContext("2d")!;
     if (!ctx) return;
+
+    const surfaceLabel = t("features.ceramic.surfaceLabel");
 
     const dpr = window.devicePixelRatio || 1;
     const w = 320;
@@ -52,7 +56,7 @@ function WaterBeading() {
 
       ctx.fillStyle = "rgba(201, 168, 76, 0.25)";
       ctx.font = "9px 'JetBrains Mono', monospace";
-      ctx.fillText("CERAMIC SURFACE", 20, h - 16);
+      ctx.fillText(surfaceLabel, 20, h - 16);
 
       dropletsRef.current.forEach((d) => {
         if (d.y + d.r >= h - 30) {
@@ -111,17 +115,16 @@ function WaterBeading() {
       cancelAnimationFrame(animId);
       clearInterval(spawnInterval);
     };
-  }, []);
+  }, [t]);
 
   return (
     <>
       <div className={styles.cardHeader}>
         <Shield className={styles.cardIcon} size={18} />
-        <h3 className={styles.cardTitle}>Ceramic Coating</h3>
+        <h3 className={styles.cardTitle}>{t("features.ceramic.title")}</h3>
       </div>
       <p className={styles.cardDescription}>
-        Professional-grade nano-ceramic protection that bonds at the molecular
-        level — multi-layer application for years of hydrophobic shine and UV defence.
+        {t("features.ceramic.description")}
       </p>
       <div className={styles.canvasContainer}>
         <canvas
@@ -136,6 +139,7 @@ function WaterBeading() {
 
 /* ─── Card 2: Orbital Buffer Animation (Paint Correction) ─── */
 function OrbitalBuffer() {
+  const { t } = useTranslation();
   const svgRef = useRef<SVGSVGElement>(null);
   const [cleared, setCleared] = useState(0);
 
@@ -176,18 +180,17 @@ function OrbitalBuffer() {
     <>
       <div className={styles.cardHeader}>
         <Paintbrush className={styles.cardIcon} size={18} />
-        <h3 className={styles.cardTitle}>Paint Correction</h3>
+        <h3 className={styles.cardTitle}>{t("features.paintCorrection.title")}</h3>
       </div>
       <p className={styles.cardDescription}>
-        Multi-stage machine polishing with paint depth measurement at every pass.
-        Swirl marks, scratches, and oxidation eliminated with surgical precision.
+        {t("features.paintCorrection.description")}
       </p>
 
       <div className={styles.darkPanel}>
         <div className={styles.panelHeader}>
           <div className={styles.statusGroup}>
             <div className={`${styles.statusDot} pulse-dot`} />
-            <span className={styles.statusLabel}>Correcting</span>
+            <span className={styles.statusLabel}>{t("features.paintCorrection.statusLabel")}</span>
           </div>
           <span className={styles.percentage}>{cleared}%</span>
         </div>
@@ -232,6 +235,7 @@ function OrbitalBuffer() {
 
 /* ─── Card 3: PPF Film Application Animation ─── */
 function PPFApplication() {
+  const { t } = useTranslation();
   const [coverage, setCoverage] = useState(0);
   const dirRef = useRef(1);
 
@@ -248,29 +252,28 @@ function PPFApplication() {
   }, []);
 
   const panels = [
-    { label: "Hood" },
-    { label: "Front bumper" },
-    { label: "Side mirrors" },
-    { label: "Door edges" },
-    { label: "Rocker panels" },
+    { key: "hood", label: t("features.ppf.hood") },
+    { key: "frontBumper", label: t("features.ppf.frontBumper") },
+    { key: "sideMirrors", label: t("features.ppf.sideMirrors") },
+    { key: "doorEdges", label: t("features.ppf.doorEdges") },
+    { key: "rockerPanels", label: t("features.ppf.rockerPanels") },
   ];
 
   return (
     <>
       <div className={styles.cardHeader}>
         <Film className={styles.cardIcon} size={18} />
-        <h3 className={styles.cardTitle}>Paint Protection Film</h3>
+        <h3 className={styles.cardTitle}>{t("features.ppf.title")}</h3>
       </div>
       <p className={styles.cardDescription}>
-        Self-healing thermoplastic urethane film — invisible armour against stone chips,
-        road debris, and environmental contaminants.
+        {t("features.ppf.description")}
       </p>
 
       <div className={styles.darkPanel}>
         <div className={styles.panelHeader}>
           <div className={styles.statusGroup}>
             <div className={`${styles.statusDot} pulse-dot`} />
-            <span className={styles.statusLabel}>PPF Application</span>
+            <span className={styles.statusLabel}>{t("features.ppf.statusLabel")}</span>
           </div>
           <span className={styles.percentage}>{Math.round(coverage)}%</span>
         </div>
@@ -279,11 +282,11 @@ function PPFApplication() {
           {panels.map((panel, i) => {
             const panelCoverage = Math.min(100, Math.max(0, (coverage - i * 15) * (100 / 25)));
             return (
-              <div key={panel.label}>
+              <div key={panel.key}>
                 <div className={styles.panelItemHeader}>
                   <span className={styles.panelItemLabel}>{panel.label}</span>
                   <span className={styles.panelItemStatus}>
-                    {panelCoverage > 95 ? "Protected" : "Applying..."}
+                    {panelCoverage > 95 ? t("features.ppf.protected") : t("features.ppf.applying")}
                   </span>
                 </div>
                 <div className={styles.panelItemTrack}>
@@ -304,7 +307,7 @@ function PPFApplication() {
 
         <div className={styles.filmLabel}>
           <div className={`${styles.filmLine} ${styles.filmLineLeft}`} />
-          <span className={styles.filmText}>SELF-HEALING FILM</span>
+          <span className={styles.filmText}>{t("features.ppf.filmLabel")}</span>
           <div className={`${styles.filmLine} ${styles.filmLineRight}`} />
         </div>
       </div>
@@ -314,6 +317,7 @@ function PPFApplication() {
 
 /* ─── Features Section ─── */
 export default function Features() {
+  const { t } = useTranslation();
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -337,10 +341,10 @@ export default function Features() {
   return (
     <section id="features" ref={sectionRef} className={styles.section}>
       <div className={styles.header}>
-        <p className={styles.label}>Our Services</p>
+        <p className={styles.label}>{t("features.label")}</p>
         <h2 className={styles.title}>
-          Crafted with{" "}
-          <span className={styles.titleAccent}>obsession.</span>
+          {t("features.title")}{" "}
+          <span className={styles.titleAccent}>{t("features.titleAccent")}</span>
         </h2>
       </div>
 

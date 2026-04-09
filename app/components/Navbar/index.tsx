@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
+  const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -22,11 +24,13 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { label: "Services", href: "#features" },
-    { label: "Philosophy", href: "#philosophy" },
-    { label: "Process", href: "#protocol" },
-    { label: "Pricing", href: "#pricing" },
+    { label: t("navbar.services"), href: "#features" },
+    { label: t("navbar.philosophy"), href: "#philosophy" },
+    { label: t("navbar.process"), href: "#protocol" },
+    { label: t("navbar.pricing"), href: "#pricing" },
   ];
+
+  const currentLang = i18n.language?.startsWith("en") ? "en" : "hr";
 
   return (
     <nav
@@ -62,10 +66,31 @@ export default function Navbar() {
         +385 95 356 6095
       </a>
 
+      {/* Language toggle - desktop */}
+      <div className={`${styles.langToggle} ${scrolled ? styles.langToggleScrolled : ""}`}>
+        <button
+          type="button"
+          onClick={() => i18n.changeLanguage("hr")}
+          className={`${styles.langBtn} ${currentLang === "hr" ? styles.langBtnActive : ""}`}
+          aria-label="Hrvatski"
+        >
+          HR
+        </button>
+        <span className={styles.langDivider}>|</span>
+        <button
+          type="button"
+          onClick={() => i18n.changeLanguage("en")}
+          className={`${styles.langBtn} ${currentLang === "en" ? styles.langBtnActive : ""}`}
+          aria-label="English"
+        >
+          EN
+        </button>
+      </div>
+
       {/* CTA */}
       <a href="#pricing" className={`${styles.cta} btn-magnetic`}>
         <span className={`${styles.ctaBg} btn-bg`} />
-        <span className={styles.ctaText}>BOOK NOW</span>
+        <span className={styles.ctaText}>{t("navbar.bookNow")}</span>
       </a>
 
       {/* Mobile hamburger */}
@@ -79,7 +104,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className={styles.mobileMenu}>
+        <div className={`${styles.mobileMenu} ${scrolled ? styles.mobileMenuScrolled : ""}`}>
           {links.map((link) => (
             <a
               key={link.label}
@@ -97,12 +122,31 @@ export default function Navbar() {
             <Phone size={14} />
             +385 95 356 6095
           </a>
+          <div className={styles.langToggleMobile}>
+            <button
+              type="button"
+              onClick={() => i18n.changeLanguage("hr")}
+              className={`${styles.langBtn} ${currentLang === "hr" ? styles.langBtnActive : ""}`}
+              aria-label="Hrvatski"
+            >
+              HR
+            </button>
+            <span className={styles.langDivider}>|</span>
+            <button
+              type="button"
+              onClick={() => i18n.changeLanguage("en")}
+              className={`${styles.langBtn} ${currentLang === "en" ? styles.langBtnActive : ""}`}
+              aria-label="English"
+            >
+              EN
+            </button>
+          </div>
           <a
             href="#pricing"
             onClick={() => setMobileOpen(false)}
             className={`${styles.mobileCta} btn-magnetic`}
           >
-            BOOK NOW
+            {t("navbar.bookNow")}
           </a>
         </div>
       )}

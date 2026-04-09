@@ -3,9 +3,11 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
+  const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -39,34 +41,32 @@ export default function Hero() {
 
       <div ref={containerRef} className={styles.content}>
         <p data-hero-anim className={styles.tagline}>
-          Premium Automotive Detailing — Đakovo, Croatia
+          {t("hero.tagline")}
         </p>
 
         <h1 data-hero-anim className={styles.headingLine1}>
-          <span className={styles.headingText1}>Elegance meets</span>
+          <span className={styles.headingText1}>{t("hero.heading1")}</span>
         </h1>
 
         <h1 data-hero-anim className={styles.headingLine2}>
-          <span className={styles.headingText2}>Precision.</span>
+          <span className={styles.headingText2}>{t("hero.heading2")}</span>
         </h1>
 
         <p data-hero-anim className={styles.description}>
-          Where automotive artistry converges with molecular-level protection.
-          Ceramic coating, paint correction, and PPF — crafted with obsession
-          by David Salopek.
+          {t("hero.description")}
         </p>
 
         <div data-hero-anim className={styles.ctaGroup}>
           <a href="#pricing" className={`${styles.ctaPrimary} btn-magnetic`}>
             <span className={`${styles.ctaPrimaryBg} btn-bg`} />
             <span className={styles.ctaPrimaryContent}>
-              Book Now
+              {t("hero.bookNow")}
               <ArrowRight size={18} />
             </span>
           </a>
           <a href="#features" className={`${styles.ctaSecondary} btn-magnetic`}>
             <span className={styles.ctaSecondaryContent}>
-              Our Services
+              {t("hero.ourServices")}
               <ChevronDown size={18} />
             </span>
           </a>

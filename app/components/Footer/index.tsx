@@ -1,11 +1,27 @@
 "use client";
 
 import { Phone, AtSign, MapPin } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
 import styles from "./Footer.module.css";
 
-export default function Footer() {
+type FooterProps = {
+  variant?: "default" | "gold";
+};
+
+export default function Footer({ variant = "default" }: FooterProps) {
+  const { t } = useTranslation();
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  // On subpages, anchor links like "#features" must jump back to the home page
+  const anchor = (hash: string) => (isHome ? hash : `/${hash}`);
+
   return (
-    <footer className={styles.footer}>
+    <footer
+      className={`${styles.footer} ${
+        variant === "gold" ? styles.footerGold : ""
+      }`}
+    >
       <div className={styles.container}>
         <div className={styles.grid}>
           {/* Brand */}
@@ -13,25 +29,24 @@ export default function Footer() {
             <h3 className={styles.brandName}>CODE</h3>
             <p className={styles.brandSub}>Detailing</p>
             <p className={styles.brandDescription}>
-              Premium automotive detailing by David Salopek. Where precision meets
-              artistry — every vehicle, a masterpiece.
+              {t("footer.brandDescription")}
             </p>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className={styles.columnTitle}>Services</h4>
+            <h4 className={styles.columnTitle}>{t("footer.servicesTitle")}</h4>
             <ul className={styles.linkList}>
               {[
-                "Ceramic Coating",
-                "Paint Correction",
-                "Paint Protection Film",
-                "Headlight Restoration",
-                "Interior Deep Clean",
+                { key: "ceramicCoating", label: t("footer.ceramicCoating") },
+                { key: "paintCorrection", label: t("footer.paintCorrection") },
+                { key: "ppf", label: t("footer.ppf") },
+                { key: "headlightRestoration", label: t("footer.headlightRestoration") },
+                { key: "interiorDeepClean", label: t("footer.interiorDeepClean") },
               ].map((item) => (
-                <li key={item}>
-                  <a href="#features" className={`${styles.link} link-lift`}>
-                    {item}
+                <li key={item.key}>
+                  <a href={anchor("#features")} className={`${styles.link} link-lift`}>
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -40,16 +55,16 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className={styles.columnTitle}>Company</h4>
+            <h4 className={styles.columnTitle}>{t("footer.companyTitle")}</h4>
             <ul className={styles.linkList}>
               {[
-                { label: "About", href: "#philosophy" },
-                { label: "Process", href: "#protocol" },
-                { label: "Pricing", href: "#pricing" },
-                { label: "Testimonials", href: "#testimonials" },
+                { key: "about", label: t("footer.about"), href: "#philosophy" },
+                { key: "process", label: t("footer.process"), href: "#protocol" },
+                { key: "pricing", label: t("footer.pricing"), href: "#pricing" },
+                { key: "testimonials", label: t("footer.testimonials"), href: "#testimonials" },
               ].map((item) => (
-                <li key={item.label}>
-                  <a href={item.href} className={`${styles.link} link-lift`}>
+                <li key={item.key}>
+                  <a href={anchor(item.href)} className={`${styles.link} link-lift`}>
                     {item.label}
                   </a>
                 </li>
@@ -59,7 +74,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className={styles.columnTitle}>Contact</h4>
+            <h4 className={styles.columnTitle}>{t("footer.contactTitle")}</h4>
             <ul className={styles.linkList}>
               <li>
                 <a href="tel:+385953566095" className={`${styles.contactLink} link-lift`}>
@@ -91,7 +106,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className={`${styles.whatsappBtn} link-lift`}
                 >
-                  WhatsApp Us
+                  {t("footer.whatsappUs")}
                 </a>
               </li>
             </ul>
@@ -102,12 +117,12 @@ export default function Footer() {
         <div className={styles.bottomBar}>
           <div className={styles.statusGroup}>
             <div className={`${styles.statusDot} pulse-dot`} />
-            <span className={styles.statusText}>Accepting Bookings</span>
+            <span className={styles.statusText}>{t("footer.acceptingBookings")}</span>
           </div>
 
           <div className={styles.legalLinks}>
-            <a href="#" className={styles.legalLink}>Privacy</a>
-            <a href="#" className={styles.legalLink}>Terms</a>
+            <a href="/privacy" className={styles.legalLink}>{t("footer.privacy")}</a>
+            <a href="/terms" className={styles.legalLink}>{t("footer.terms")}</a>
             <span>&copy; {new Date().getFullYear()} Code Detailing</span>
           </div>
         </div>

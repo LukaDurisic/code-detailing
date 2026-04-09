@@ -22,7 +22,7 @@ html {
 body {
   background: var(--obsidian);
   color: var(--ivory);
-  font-family: "Inter", sans-serif;
+  font-family: "Marcellus", serif;
   overflow-x: hidden;
 }
 
@@ -39,6 +39,12 @@ body {
 }
 
 /* Magnetic button */
+button,
+.btn-magnetic {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
 .btn-magnetic {
   position: relative;
   overflow: hidden;

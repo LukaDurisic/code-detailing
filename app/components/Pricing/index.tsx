@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Check, ArrowRight } from "lucide-react";
@@ -8,53 +9,57 @@ import styles from "./Pricing.module.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const tiers = [
-  {
-    name: "Essential",
-    price: "€249",
-    description: "Professional exterior refresh and protection",
-    features: [
-      "Full exterior hand wash & decontamination",
-      "Single-stage paint correction",
-      "Interior vacuum & wipe-down",
-      "Tire & wheel deep clean",
-      "Glass polishing",
-    ],
-    highlighted: false,
-  },
-  {
-    name: "Performance",
-    price: "€599",
-    description: "Our signature multi-stage treatment",
-    features: [
-      "Everything in Essential",
-      "Two-stage paint correction",
-      "Ceramic coating (1 year durability)",
-      "Leather conditioning & restoration",
-      "Engine bay detail",
-      "Paint depth measurement report",
-    ],
-    highlighted: true,
-  },
-  {
-    name: "Concours",
-    price: "€1.299",
-    description: "The ultimate show-car level restoration",
-    features: [
-      "Everything in Performance",
-      "Three-stage paint correction",
-      "Premium ceramic coating (5 year)",
-      "Full interior deep restoration",
-      "Headlight restoration",
-      "PPF on high-impact zones",
-      "Annual maintenance plan",
-    ],
-    highlighted: false,
-  },
-];
-
 export default function Pricing() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
+
+  const tiers = [
+    {
+      key: "essential",
+      name: t("pricing.essential.name"),
+      price: "€249",
+      description: t("pricing.essential.description"),
+      features: [
+        t("pricing.essential.feature1"),
+        t("pricing.essential.feature2"),
+        t("pricing.essential.feature3"),
+        t("pricing.essential.feature4"),
+        t("pricing.essential.feature5"),
+      ],
+      highlighted: false,
+    },
+    {
+      key: "performance",
+      name: t("pricing.performance.name"),
+      price: "€599",
+      description: t("pricing.performance.description"),
+      features: [
+        t("pricing.performance.feature1"),
+        t("pricing.performance.feature2"),
+        t("pricing.performance.feature3"),
+        t("pricing.performance.feature4"),
+        t("pricing.performance.feature5"),
+        t("pricing.performance.feature6"),
+      ],
+      highlighted: true,
+    },
+    {
+      key: "concours",
+      name: t("pricing.concours.name"),
+      price: "€1.299",
+      description: t("pricing.concours.description"),
+      features: [
+        t("pricing.concours.feature1"),
+        t("pricing.concours.feature2"),
+        t("pricing.concours.feature3"),
+        t("pricing.concours.feature4"),
+        t("pricing.concours.feature5"),
+        t("pricing.concours.feature6"),
+        t("pricing.concours.feature7"),
+      ],
+      highlighted: false,
+    },
+  ];
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -77,26 +82,25 @@ export default function Pricing() {
   return (
     <section id="pricing" ref={sectionRef} className={styles.section}>
       <div className={styles.header}>
-        <p className={styles.label}>Pricing</p>
+        <p className={styles.label}>{t("pricing.label")}</p>
         <h2 className={styles.title}>
-          Invest in{" "}
-          <span className={styles.titleAccent}>excellence.</span>
+          {t("pricing.title")}{" "}
+          <span className={styles.titleAccent}>{t("pricing.titleAccent")}</span>
         </h2>
         <p className={styles.subtitle}>
-          Every package includes our signature attention to detail. Prices vary
-          by vehicle size — contact us for a precise quote.
+          {t("pricing.subtitle")}
         </p>
       </div>
 
       <div className={styles.grid}>
         {tiers.map((tier) => (
           <div
-            key={tier.name}
+            key={tier.key}
             data-pricing-card
             className={`${styles.card} ${tier.highlighted ? styles.cardHighlighted : ""}`}
           >
             {tier.highlighted && (
-              <span className={styles.badge}>Most Popular</span>
+              <span className={styles.badge}>{t("pricing.mostPopular")}</span>
             )}
 
             <h3 className={`${styles.tierName} ${tier.highlighted ? styles.tierNameHighlighted : ""}`}>
@@ -106,12 +110,12 @@ export default function Pricing() {
 
             <div className={styles.priceBlock}>
               <span className={styles.price}>{tier.price}</span>
-              <span className={styles.priceNote}>starting from</span>
+              <span className={styles.priceNote}>{t("pricing.startingFrom")}</span>
             </div>
 
             <ul className={styles.featureList}>
               {tier.features.map((feature) => (
-                <li key={feature} className={styles.featureItem}>
+                <li key={`${tier.key}-${feature}`} className={styles.featureItem}>
                   <Check
                     size={15}
                     className={`${styles.checkIcon} ${tier.highlighted ? styles.checkIconHighlighted : ""}`}
@@ -133,7 +137,7 @@ export default function Pricing() {
                 }`}
               />
               <span className={styles.ctaContent}>
-                Get a Quote
+                {t("pricing.getQuote")}
                 <ArrowRight size={15} />
               </span>
             </a>

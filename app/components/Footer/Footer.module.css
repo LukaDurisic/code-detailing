@@ -56,8 +56,8 @@
 }
 
 .brandName {
-  font-family: 'Inter', sans-serif;
-  color: var(--ivory);
+  font-family: "Marcellus", serif;
+  color: var(--champagne);
   font-weight: 700;
   font-size: 1.125rem;
   letter-spacing: 0.25em;
@@ -67,7 +67,7 @@
 
 .brandSub {
   color: rgba(201, 168, 76, 0.4);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -83,7 +83,7 @@
 
 .columnTitle {
   color: rgba(201, 168, 76, 0.5);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -118,6 +118,7 @@
   color: rgba(250, 248, 245, 0.35);
   font-size: 0.875rem;
   transition: color 300ms;
+  text-decoration: none;
 }
 
 .contactLink:hover {
@@ -149,6 +150,7 @@
   font-size: 0.75rem;
   font-weight: 500;
   transition: background 300ms;
+  text-decoration: none;
 }
 
 .whatsappBtn:hover {
@@ -188,7 +190,7 @@
 
 .statusText {
   color: rgba(250, 248, 245, 0.25);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.05em;
 }
@@ -197,14 +199,36 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  color: rgba(250, 248, 245, 0.2);
+  color: var(--champagne);
   font-size: 0.75rem;
 }
 
 .legalLink {
+  color: var(--champagne);
   transition: color 300ms;
+  text-decoration: none;
 }
 
 .legalLink:hover {
-  color: rgba(201, 168, 76, 0.4);
+  color: var(--champagne-glow);
+}
+
+/* Gold variant — used on /privacy and /terms pages so footer links
+   render in champagne initially instead of muted ivory. */
+.footerGold .link,
+.footerGold .contactLink {
+  color: var(--champagne);
+}
+
+.footerGold .link:hover,
+.footerGold .contactLink:hover {
+  color: var(--champagne-glow);
+}
+
+.footerGold .legalLink {
+  color: rgba(201, 168, 76, 0.7);
+}
+
+.footerGold .legalLink:hover {
+  color: var(--champagne);
 }

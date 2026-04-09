@@ -1,0 +1,249 @@
+{
+  "navbar": {
+    "services": "Usluge",
+    "philosophy": "Vizija",
+    "process": "Proces",
+    "pricing": "Cjenik",
+    "bookNow": "REZERVIRAJ"
+  },
+  "hero": {
+    "tagline": "Premium Auto Detailing — Đakovo, Hrvatska",
+    "heading1": "Elegancija susreće",
+    "heading2": "Preciznost.",
+    "description": "Gdje se automobilska umjetnost susreće sa zaštitom na molekularnoj razini. Keramičke prevlake, korekcija laka i PPF — izrađeno s opsesijom od strane Davida Salopeka.",
+    "bookNow": "Rezerviraj",
+    "ourServices": "Naše usluge"
+  },
+  "features": {
+    "label": "Naše usluge",
+    "title": "Izrađeno s",
+    "titleAccent": "opsesijom.",
+    "ceramic": {
+      "title": "Keramička prevlaka",
+      "description": "Profesionalna nano-keramička zaštita koja se veže na molekularnoj razini — višeslojna primjena za godine hidrofobnog sjaja i UV zaštite.",
+      "surfaceLabel": "KERAMIČKA POVRŠINA"
+    },
+    "paintCorrection": {
+      "title": "Korekcija laka",
+      "description": "Višefazno strojno poliranje s mjerenjem dubine laka u svakom prolazu. Vrtložni tragovi, ogrebotine i oksidacija eliminirani kirurškom preciznošću.",
+      "statusLabel": "Koriguje se"
+    },
+    "ppf": {
+      "title": "Zaštitna folija za lak",
+      "description": "Samoobnavljajuća termoplastična poliuretanska folija — nevidljivi oklop protiv kamenčića, krhotina s ceste i utjecaja iz okoline.",
+      "statusLabel": "PPF Primjena",
+      "hood": "Hauba",
+      "frontBumper": "Prednji branik",
+      "sideMirrors": "Bočni retrovizori",
+      "doorEdges": "Rubovi vrata",
+      "rockerPanels": "Prag vozila",
+      "protected": "Zaštićeno",
+      "applying": "Primjenjuje se...",
+      "filmLabel": "SAMOOBNAVLJAJUĆA FOLIJA"
+    }
+  },
+  "philosophy": {
+    "statement1": "Većina detailinga fokusira se na: površinsko čišćenje.",
+    "statement2": {
+      "we": "Mi",
+      "focus": "se fokusiramo",
+      "on": "na:",
+      "molecular": "savršenstvo na",
+      "perfection": "molekularnoj razini."
+    }
+  },
+  "protocol": {
+    "label": "Proces",
+    "title": "Tri koraka do",
+    "titleAccent": "savršenstva.",
+    "step": "KORAK",
+    "step01": {
+      "title": "Procjena",
+      "description": "Sveobuhvatan pregled vozila pod kalibriranim studijskim osvjetljenjem. Svaka nesavršenost mapirana, izmjerena i dokumentirana prije nego što ijedan alat dodirne površinu."
+    },
+    "step02": {
+      "title": "Korekcija",
+      "description": "Višefazno strojno poliranje s preciznim pastama. Dubina laka mjerena u svakoj fazi — uklanjamo samo ono što je nužno kako bi se otkrio savršen završni sloj ispod."
+    },
+    "step03": {
+      "title": "Zaštita",
+      "description": "Profesionalna keramička prevlaka primijenjena u kontroliranim uvjetima. Višestruki slojevi pojedinačno stvrdnuti za maksimalnu snagu vezivanja i godine trajne zaštite."
+    }
+  },
+  "testimonials": {
+    "label": "Recenzije",
+    "title": "Povjerenje",
+    "titleAccent": "entuzijasta.",
+    "marko": {
+      "text": "Nevjerojatan rezultat. David je posvetio čitav dan mom RS6 — keramička zaštita izgleda fenomenalno, a boja sjaji kao nikad prije. Topla preporuka!",
+      "translation": "Incredible result. David dedicated a full day to my RS6 — the ceramic coating looks phenomenal and the paint shines like never before."
+    },
+    "ivan": {
+      "text": "Korekcija laka u tri faze potpuno je uklonila vrtložne tragove. Profesionalni pristup od početka do kraja — CODE je jedini detailer kojem povjeravam svoj auto.",
+      "translation": "Three-stage paint correction completely removed all swirl marks. Professional approach start to finish — CODE is the only detailer I trust with my car."
+    },
+    "ana": {
+      "text": "PPF na prednjem dijelu plus keramika na cijelom autu. Rezultat premašuje očekivanja. Preporučujem svima koji traže premium uslugu u Hrvatskoj.",
+      "translation": "PPF on the front end plus full ceramic coating. Result exceeds expectations. Recommend to anyone seeking premium service in Croatia."
+    }
+  },
+  "pricing": {
+    "label": "Cjenik",
+    "title": "Uložite u",
+    "titleAccent": "izvrsnost.",
+    "subtitle": "Svaki paket uključuje našu prepoznatljivu pažnju prema detaljima. Cijene variraju ovisno o veličini vozila — kontaktirajte nas za preciznu ponudu.",
+    "mostPopular": "Najpopularnije",
+    "startingFrom": "početna cijena",
+    "getQuote": "Zatraži ponudu",
+    "essential": {
+      "name": "Essential",
+      "description": "Profesionalno osvježavanje i zaštita vanjštine",
+      "feature1": "Potpuno ručno pranje i dekontaminacija",
+      "feature2": "Jednofazna korekcija laka",
+      "feature3": "Usisavanje i brisanje interijera",
+      "feature4": "Dubinsko čišćenje guma i felgi",
+      "feature5": "Poliranje stakala"
+    },
+    "performance": {
+      "name": "Performance",
+      "description": "Naš prepoznatljiv višefazni tretman",
+      "feature1": "Sve što uključuje Essential",
+      "feature2": "Dvofazna korekcija laka",
+      "feature3": "Keramička prevlaka (1 godina trajnosti)",
+      "feature4": "Njega i obnavljanje kože",
+      "feature5": "Detailing motornog prostora",
+      "feature6": "Izvješće o dubini laka"
+    },
+    "concours": {
+      "name": "Concours",
+      "description": "Ultimativna obnova na razini show cara",
+      "feature1": "Sve što uključuje Performance",
+      "feature2": "Trofazna korekcija laka",
+      "feature3": "Premium keramička prevlaka (5 godina)",
+      "feature4": "Potpuna dubinska obnova interijera",
+      "feature5": "Obnova farova",
+      "feature6": "PPF na najizloženijim zonama",
+      "feature7": "Plan godišnjeg održavanja"
+    }
+  },
+  "footer": {
+    "brandDescription": "Premium auto detailing od Davida Salopeka. Gdje preciznost susreće umjetnost — svako vozilo, remek-djelo.",
+    "servicesTitle": "Usluge",
+    "ceramicCoating": "Keramička prevlaka",
+    "paintCorrection": "Korekcija laka",
+    "ppf": "Zaštitna folija za lak",
+    "headlightRestoration": "Obnova farova",
+    "interiorDeepClean": "Dubinsko čišćenje interijera",
+    "companyTitle": "Tvrtka",
+    "about": "O nama",
+    "process": "Proces",
+    "pricing": "Cjenik",
+    "testimonials": "Recenzije",
+    "contactTitle": "Kontakt",
+    "whatsappUs": "WhatsApp",
+    "acceptingBookings": "Primamo rezervacije",
+    "privacy": "Privatnost",
+    "terms": "Uvjeti",
+    "copyright": "Code Detailing"
+  },
+  "legal": {
+    "backToHome": "Povratak na početnu",
+    "lastUpdated": "Zadnje ažurirano"
+  },
+  "privacyPage": {
+    "title": "Politika privatnosti",
+    "updatedDate": "1. travnja 2026.",
+    "intro": {
+      "title": "Uvod",
+      "body": "Code Detailing, obrt za detailing vozila sa sjedištem u Đakovu, Hrvatska, poštuje vašu privatnost i predan je zaštiti osobnih podataka koje nam povjeravate. Ova Politika privatnosti objašnjava koje podatke prikupljamo, kako ih koristimo i koja su vaša prava u skladu s Općom uredbom o zaštiti podataka (GDPR) i Zakonom o provedbi Opće uredbe o zaštiti podataka Republike Hrvatske."
+    },
+    "dataCollected": {
+      "title": "Koje podatke prikupljamo",
+      "body": "Prikupljamo samo one podatke koji su nam nužni za pružanje usluga i komunikaciju s vama. To uključuje vaše ime i prezime, kontakt broj telefona, e-mail adresu, podatke o vozilu (marka, model, godina), te sadržaj poruka koje nam šaljete putem WhatsAppa, Instagrama, e-maila ili telefona. Ne prikupljamo nikakve financijske podatke putem naše web stranice."
+    },
+    "dataUse": {
+      "title": "Kako koristimo vaše podatke",
+      "body": "Vaše podatke koristimo isključivo za: odgovaranje na vaše upite, pripremu ponuda, zakazivanje termina, izvršavanje ugovorenih usluga detailinga, izdavanje računa i komunikaciju u vezi s rezervacijama. Nikada ne prodajemo niti iznajmljujemo vaše osobne podatke trećim stranama."
+    },
+    "legalBasis": {
+      "title": "Pravna osnova obrade",
+      "body": "Obrada vaših podataka temelji se na vašem pristanku (članak 6. stavak 1. točka a GDPR-a), izvršenju ugovora o pružanju usluge (članak 6. stavak 1. točka b) te našem legitimnom interesu za pružanje i poboljšanje usluga (članak 6. stavak 1. točka f)."
+    },
+    "dataSharing": {
+      "title": "Dijeljenje podataka",
+      "body": "Vaše osobne podatke ne dijelimo s trećim stranama osim u zakonom propisanim slučajevima (primjerice, knjigovodstveni servis za izdavanje računa, nadležna državna tijela). Svi partneri s kojima surađujemo obvezani su čuvati povjerljivost vaših podataka."
+    },
+    "cookies": {
+      "title": "Kolačići",
+      "body": "Naša web stranica koristi samo nužne tehničke kolačiće za pohranu vaše jezične postavke (hrvatski ili engleski). Ne koristimo kolačiće za praćenje ni analitiku trećih strana bez vašeg pristanka."
+    },
+    "rights": {
+      "title": "Vaša prava",
+      "body": "U skladu s GDPR-om imate pravo na: pristup vašim podacima, ispravak netočnih podataka, brisanje podataka (\"pravo na zaborav\"), ograničavanje obrade, prenosivost podataka, prigovor na obradu te povlačenje pristanka u bilo kojem trenutku. Za ostvarivanje ovih prava kontaktirajte nas putem podataka navedenih u nastavku."
+    },
+    "retention": {
+      "title": "Razdoblje čuvanja",
+      "body": "Vaše osobne podatke čuvamo samo onoliko dugo koliko je to nužno za ispunjenje svrhe za koju su prikupljeni, odnosno u skladu sa zakonskim obvezama (primjerice, računi se čuvaju 11 godina sukladno Zakonu o računovodstvu)."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": "Za sva pitanja vezana uz ovu Politiku privatnosti ili ostvarivanje vaših prava, kontaktirajte nas:",
+      "phone": "Telefon: +385 95 356 6095",
+      "location": "Adresa: Đakovo, Hrvatska"
+    },
+    "changes": {
+      "title": "Izmjene Politike",
+      "body": "Zadržavamo pravo povremenog ažuriranja ove Politike privatnosti. O svim značajnim izmjenama obavijestit ćemo vas putem naše web stranice. Preporučujemo vam da povremeno provjerite ovu stranicu."
+    }
+  },
+  "termsPage": {
+    "title": "Uvjeti korištenja",
+    "updatedDate": "1. travnja 2026.",
+    "intro": {
+      "title": "Uvod",
+      "body": "Dobrodošli na web stranicu Code Detailinga. Korištenjem ove web stranice i naših usluga prihvaćate sljedeće Uvjete korištenja. Molimo vas da ih pažljivo pročitate prije korištenja naših usluga. Ako se ne slažete s bilo kojim dijelom ovih uvjeta, molimo vas da ne koristite našu stranicu niti naše usluge."
+    },
+    "services": {
+      "title": "Naše usluge",
+      "body": "Code Detailing pruža profesionalne usluge detailinga vozila, uključujući keramičke prevlake, višefaznu korekciju laka, primjenu zaštitne folije za lak (PPF), dubinsko čišćenje interijera, obnovu farova i povezane tretmane. Sve usluge izvode se u našim prostorima u Đakovu, prema dogovorenom terminu i specifikacijama."
+    },
+    "booking": {
+      "title": "Rezervacije i cijene",
+      "body": "Rezervacije se vrše putem telefona, WhatsAppa, Instagrama ili e-maila. Cijene navedene na web stranici su početne i mogu se razlikovati ovisno o veličini, stanju i specifičnim zahtjevima vozila. Konačna cijena bit će dogovorena prije početka rada. Prihvaćamo plaćanje gotovinom i bankovnim prijenosom."
+    },
+    "cancellation": {
+      "title": "Otkazivanje i promjena termina",
+      "body": "Ako trebate otkazati ili promijeniti termin, molimo vas da nas obavijestite najmanje 48 sati unaprijed. Otkazivanja u kraćem roku mogu rezultirati naknadom za gubitak termina. Zadržavamo pravo otkazivanja ili prebacivanja termina u slučaju nepovoljnih uvjeta ili neočekivanih okolnosti."
+    },
+    "warranties": {
+      "title": "Jamstvo na izvedene radove",
+      "body": "Jamčimo da će sve usluge biti izvedene profesionalno, prema standardima struke i s vrhunskim materijalima. Trajnost keramičkih prevlaka i drugih tretmana navodi se u ponudi i ovisi o pravilnom održavanju vozila. Za jamstveni servis potrebno je slijediti naše preporuke za održavanje."
+    },
+    "liability": {
+      "title": "Ograničenje odgovornosti",
+      "body": "Iako poduzimamo sve razumne mjere opreza, Code Detailing neće biti odgovoran za štete koje proizlaze iz predstojećih neispravnosti vozila, skrivenih mana laka ili drugih uvjeta koji nisu bili otkriveni tijekom početne procjene. Naša maksimalna odgovornost ograničena je na vrijednost plaćene usluge."
+    },
+    "ip": {
+      "title": "Intelektualno vlasništvo",
+      "body": "Sav sadržaj na ovoj web stranici, uključujući tekstove, fotografije, logotipe i dizajn, vlasništvo je Code Detailinga i zaštićen je autorskim pravima. Zabranjeno je kopiranje, reprodukcija ili distribucija bez prethodnog pisanog odobrenja."
+    },
+    "clientObligations": {
+      "title": "Obveze klijenta",
+      "body": "Klijent je dužan dostaviti vozilo na dogovorenom mjestu i u dogovoreno vrijeme, ukloniti sve osobne stvari iz vozila prije primopredaje te obavijestiti nas o svim poznatim oštećenjima ili problemima s vozilom. Code Detailing ne preuzima odgovornost za osobne stvari ostavljene u vozilu."
+    },
+    "changes": {
+      "title": "Izmjene Uvjeta",
+      "body": "Zadržavamo pravo izmjene ovih Uvjeta korištenja u bilo kojem trenutku. Ažurirana verzija bit će objavljena na ovoj stranici s novim datumom izmjene. Daljnjim korištenjem naših usluga nakon izmjena smatra se da prihvaćate nove uvjete."
+    },
+    "law": {
+      "title": "Mjerodavno pravo",
+      "body": "Ovi Uvjeti korištenja podložni su zakonodavstvu Republike Hrvatske. U slučaju spora, nadležan je sud u Osijeku. Potrošači također mogu koristiti platformu Europske komisije za online rješavanje sporova."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": "Za sva pitanja vezana uz ove Uvjete korištenja kontaktirajte nas:",
+      "phone": "Telefon: +385 95 356 6095",
+      "location": "Adresa: Đakovo, Hrvatska"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./Philosophy.module.css";
@@ -8,6 +9,7 @@ import styles from "./Philosophy.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Philosophy() {
+  const { t } = useTranslation();
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -57,13 +59,13 @@ export default function Philosophy() {
     return () => ctx.revert();
   }, []);
 
-  const statement1Words = ["Most", "detailing", "focuses", "on:", "surface-level", "cleaning."];
+  const statement1Words = t("philosophy.statement1").split(" ");
   const statement2Words = [
-    { text: "We", highlight: false },
-    { text: "focus", highlight: false },
-    { text: "on:", highlight: false },
-    { text: "molecular-level", highlight: true },
-    { text: "perfection.", highlight: true },
+    { text: t("philosophy.statement2.we"), highlight: false },
+    { text: t("philosophy.statement2.focus"), highlight: false },
+    { text: t("philosophy.statement2.on"), highlight: false },
+    { text: t("philosophy.statement2.molecular"), highlight: true },
+    { text: t("philosophy.statement2.perfection"), highlight: true },
   ];
 
   return (

@@ -1,0 +1,249 @@
+{
+  "navbar": {
+    "services": "Services",
+    "philosophy": "Vision",
+    "process": "Process",
+    "pricing": "Pricing",
+    "bookNow": "BOOK NOW"
+  },
+  "hero": {
+    "tagline": "Premium Automotive Detailing — Đakovo, Croatia",
+    "heading1": "Elegance meets",
+    "heading2": "Precision.",
+    "description": "Where automotive artistry converges with molecular-level protection. Ceramic coating, paint correction, and PPF — crafted with obsession by David Salopek.",
+    "bookNow": "Book Now",
+    "ourServices": "Our Services"
+  },
+  "features": {
+    "label": "Our Services",
+    "title": "Crafted with",
+    "titleAccent": "obsession.",
+    "ceramic": {
+      "title": "Ceramic Coating",
+      "description": "Professional-grade nano-ceramic protection that bonds at the molecular level — multi-layer application for years of hydrophobic shine and UV defence.",
+      "surfaceLabel": "CERAMIC SURFACE"
+    },
+    "paintCorrection": {
+      "title": "Paint Correction",
+      "description": "Multi-stage machine polishing with paint depth measurement at every pass. Swirl marks, scratches, and oxidation eliminated with surgical precision.",
+      "statusLabel": "Correcting"
+    },
+    "ppf": {
+      "title": "Paint Protection Film",
+      "description": "Self-healing thermoplastic urethane film — invisible armour against stone chips, road debris, and environmental contaminants.",
+      "statusLabel": "PPF Application",
+      "hood": "Hood",
+      "frontBumper": "Front bumper",
+      "sideMirrors": "Side mirrors",
+      "doorEdges": "Door edges",
+      "rockerPanels": "Rocker panels",
+      "protected": "Protected",
+      "applying": "Applying...",
+      "filmLabel": "SELF-HEALING FILM"
+    }
+  },
+  "philosophy": {
+    "statement1": "Most detailing focuses on: surface-level cleaning.",
+    "statement2": {
+      "we": "We",
+      "focus": "focus",
+      "on": "on:",
+      "molecular": "molecular-level",
+      "perfection": "perfection."
+    }
+  },
+  "protocol": {
+    "label": "The Process",
+    "title": "Three steps to",
+    "titleAccent": "flawless.",
+    "step": "STEP",
+    "step01": {
+      "title": "Assessment",
+      "description": "Comprehensive vehicle inspection under calibrated studio lighting. Every imperfection mapped, measured, and documented before a single tool touches the surface."
+    },
+    "step02": {
+      "title": "Correction",
+      "description": "Multi-stage machine polishing with precision compounds. Paint depth measured at every stage — we remove only what's necessary to reveal the perfect finish beneath."
+    },
+    "step03": {
+      "title": "Protection",
+      "description": "Professional-grade ceramic coating applied in controlled conditions. Multiple layers cured individually for maximum bond strength and years of durable protection."
+    }
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Trusted by",
+    "titleAccent": "enthusiasts.",
+    "marko": {
+      "text": "Incredible result. David dedicated a full day to my RS6 — the ceramic coating looks phenomenal and the paint shines like never before. Highly recommended!",
+      "translation": ""
+    },
+    "ivan": {
+      "text": "Three-stage paint correction completely removed all swirl marks. Professional approach start to finish — CODE is the only detailer I trust with my car.",
+      "translation": ""
+    },
+    "ana": {
+      "text": "PPF on the front end plus full ceramic coating. Result exceeds expectations. Recommend to anyone seeking premium service in Croatia.",
+      "translation": ""
+    }
+  },
+  "pricing": {
+    "label": "Pricing",
+    "title": "Invest in",
+    "titleAccent": "excellence.",
+    "subtitle": "Every package includes our signature attention to detail. Prices vary by vehicle size — contact us for a precise quote.",
+    "mostPopular": "Most Popular",
+    "startingFrom": "starting from",
+    "getQuote": "Get a Quote",
+    "essential": {
+      "name": "Essential",
+      "description": "Professional exterior refresh and protection",
+      "feature1": "Full exterior hand wash & decontamination",
+      "feature2": "Single-stage paint correction",
+      "feature3": "Interior vacuum & wipe-down",
+      "feature4": "Tire & wheel deep clean",
+      "feature5": "Glass polishing"
+    },
+    "performance": {
+      "name": "Performance",
+      "description": "Our signature multi-stage treatment",
+      "feature1": "Everything in Essential",
+      "feature2": "Two-stage paint correction",
+      "feature3": "Ceramic coating (1 year durability)",
+      "feature4": "Leather conditioning & restoration",
+      "feature5": "Engine bay detail",
+      "feature6": "Paint depth measurement report"
+    },
+    "concours": {
+      "name": "Concours",
+      "description": "The ultimate show-car level restoration",
+      "feature1": "Everything in Performance",
+      "feature2": "Three-stage paint correction",
+      "feature3": "Premium ceramic coating (5 year)",
+      "feature4": "Full interior deep restoration",
+      "feature5": "Headlight restoration",
+      "feature6": "PPF on high-impact zones",
+      "feature7": "Annual maintenance plan"
+    }
+  },
+  "footer": {
+    "brandDescription": "Premium automotive detailing by David Salopek. Where precision meets artistry — every vehicle, a masterpiece.",
+    "servicesTitle": "Services",
+    "ceramicCoating": "Ceramic Coating",
+    "paintCorrection": "Paint Correction",
+    "ppf": "Paint Protection Film",
+    "headlightRestoration": "Headlight Restoration",
+    "interiorDeepClean": "Interior Deep Clean",
+    "companyTitle": "Company",
+    "about": "About",
+    "process": "Process",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "contactTitle": "Contact",
+    "whatsappUs": "WhatsApp Us",
+    "acceptingBookings": "Accepting Bookings",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "Code Detailing"
+  },
+  "legal": {
+    "backToHome": "Back to home",
+    "lastUpdated": "Last updated"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "updatedDate": "April 1, 2026",
+    "intro": {
+      "title": "Introduction",
+      "body": "Code Detailing, a vehicle detailing business based in Đakovo, Croatia, respects your privacy and is committed to protecting the personal data you entrust to us. This Privacy Policy explains what information we collect, how we use it, and your rights under the General Data Protection Regulation (GDPR) and the Croatian Act on the Implementation of the GDPR."
+    },
+    "dataCollected": {
+      "title": "What data we collect",
+      "body": "We only collect the information necessary to provide our services and communicate with you. This includes your full name, contact phone number, email address, vehicle details (make, model, year), and the content of any messages you send us via WhatsApp, Instagram, email, or phone. We do not collect any financial information through our website."
+    },
+    "dataUse": {
+      "title": "How we use your data",
+      "body": "We use your information exclusively to respond to your inquiries, prepare quotes, schedule appointments, perform the contracted detailing services, issue invoices, and communicate regarding your bookings. We never sell or rent your personal data to third parties."
+    },
+    "legalBasis": {
+      "title": "Legal basis for processing",
+      "body": "Processing of your data is based on your consent (Article 6(1)(a) GDPR), the performance of a service contract (Article 6(1)(b)), and our legitimate interest in providing and improving our services (Article 6(1)(f))."
+    },
+    "dataSharing": {
+      "title": "Data sharing",
+      "body": "We do not share your personal data with third parties except as required by law (for example, accounting services for issuing invoices, or competent state authorities). All partners we work with are bound by confidentiality obligations regarding your data."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "body": "Our website uses only necessary technical cookies to store your language preference (Croatian or English). We do not use third-party tracking or analytics cookies without your consent."
+    },
+    "rights": {
+      "title": "Your rights",
+      "body": "Under the GDPR you have the right to: access your data, correct inaccurate data, have your data erased (\"right to be forgotten\"), restrict processing, data portability, object to processing, and withdraw consent at any time. To exercise these rights, contact us using the details below."
+    },
+    "retention": {
+      "title": "Data retention",
+      "body": "We retain your personal data only as long as necessary to fulfill the purpose for which it was collected, or in line with legal obligations (for example, invoices are kept for 11 years in accordance with the Croatian Accounting Act)."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "For any questions regarding this Privacy Policy or to exercise your rights, please contact us:",
+      "phone": "Phone: +385 95 356 6095",
+      "location": "Address: Đakovo, Croatia"
+    },
+    "changes": {
+      "title": "Changes to this Policy",
+      "body": "We reserve the right to update this Privacy Policy from time to time. We will notify you of any material changes through our website. We recommend checking this page periodically."
+    }
+  },
+  "termsPage": {
+    "title": "Terms of Use",
+    "updatedDate": "April 1, 2026",
+    "intro": {
+      "title": "Introduction",
+      "body": "Welcome to the Code Detailing website. By using this website and our services, you accept the following Terms of Use. Please read them carefully before using our services. If you do not agree with any part of these terms, please do not use our website or services."
+    },
+    "services": {
+      "title": "Our services",
+      "body": "Code Detailing provides professional vehicle detailing services, including ceramic coatings, multi-stage paint correction, paint protection film (PPF) application, interior deep cleaning, headlight restoration, and related treatments. All services are performed at our premises in Đakovo, according to a scheduled appointment and agreed specifications."
+    },
+    "booking": {
+      "title": "Bookings and pricing",
+      "body": "Bookings are made via phone, WhatsApp, Instagram, or email. Prices listed on the website are starting prices and may vary depending on the size, condition, and specific requirements of your vehicle. The final price will be agreed upon before work begins. We accept payment by cash and bank transfer."
+    },
+    "cancellation": {
+      "title": "Cancellation and rescheduling",
+      "body": "If you need to cancel or reschedule an appointment, please notify us at least 48 hours in advance. Cancellations made on shorter notice may result in a fee for the lost slot. We reserve the right to cancel or reschedule appointments in case of unfavorable conditions or unforeseen circumstances."
+    },
+    "warranties": {
+      "title": "Warranty on work performed",
+      "body": "We warrant that all services will be performed professionally, to industry standards, and with premium materials. The durability of ceramic coatings and other treatments is specified in the quote and depends on proper vehicle maintenance. Warranty service requires following our maintenance recommendations."
+    },
+    "liability": {
+      "title": "Limitation of liability",
+      "body": "While we take all reasonable precautions, Code Detailing will not be liable for damages arising from pre-existing vehicle defects, hidden paint imperfections, or other conditions that were not discoverable during the initial assessment. Our maximum liability is limited to the value of the service paid."
+    },
+    "ip": {
+      "title": "Intellectual property",
+      "body": "All content on this website, including text, photographs, logos, and design, is the property of Code Detailing and is protected by copyright. Copying, reproduction, or distribution without prior written permission is prohibited."
+    },
+    "clientObligations": {
+      "title": "Client obligations",
+      "body": "The client is required to deliver the vehicle to the agreed location at the agreed time, remove all personal belongings from the vehicle before drop-off, and inform us of any known damage or issues with the vehicle. Code Detailing assumes no responsibility for personal items left inside the vehicle."
+    },
+    "changes": {
+      "title": "Changes to the Terms",
+      "body": "We reserve the right to modify these Terms of Use at any time. The updated version will be published on this page with a new revision date. Continued use of our services after changes constitutes acceptance of the new terms."
+    },
+    "law": {
+      "title": "Governing law",
+      "body": "These Terms of Use are governed by the laws of the Republic of Croatia. In case of dispute, the competent court shall be the court in Osijek. Consumers may also use the European Commission's online dispute resolution platform."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "For any questions regarding these Terms of Use, please contact us:",
+      "phone": "Phone: +385 95 356 6095",
+      "location": "Address: Đakovo, Croatia"
+    }
+  }
+}

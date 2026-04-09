@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3001)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(where chrome:*)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
+      "Read(//c/Program Files/Microsoft/Edge/Application/**)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --screenshot=screenshots/page-top.png --window-size=1440,900 --hide-scrollbars \"http://localhost:3000\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu \"--screenshot=C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Projects\\\\\\\\CodeDetailing\\\\\\\\code-detailing\\\\\\\\screenshots\\\\\\\\page-top.png\" --window-size=1440,900 --hide-scrollbars \"http://localhost:3000\")",
+      "Bash(node:*)",
+      "Bash(taskkill /F /IM chrome.exe)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --window-size=1440,5000 --virtual-time-budget=10000 \"--screenshot=C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\Projects\\\\\\\\CodeDetailing\\\\\\\\code-detailing\\\\\\\\screenshots\\\\\\\\fullpage.png\" \"http://localhost:3000\")",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --hide-scrollbars --window-size=1440,900 --virtual-time-budget=15000 --run-all-compositor-stages-before-draw '--screenshot=C:\\\\Users\\\\Administrator\\\\Desktop\\\\Projects\\\\CodeDetailing\\\\code-detailing\\\\screenshots\\\\hero.png' http://localhost:3000)",
+      "Bash(/c/Program Files/Google/Chrome/Application/chrome.exe:*)",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__evaluate_script",
+      "mcp__chrome-devtools__resize_page",
+      "mcp__chrome-devtools__new_page",
+      "Bash(grep -E \"\\\\.\\(tsx?|jsx?|vue|svelte\\)$\")",
+      "Bash(grep:*)",
+      "Bash(mkdir:*)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(git remote:*)",
+      "Bash(git add:*)",
+      "Bash(git init:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(npx tsc:*)",
+      "Bash(echo \"EXIT: $?\")"
+    ]
+  }
+}

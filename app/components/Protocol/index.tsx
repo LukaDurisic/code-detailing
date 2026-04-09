@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./Protocol.module.css";
@@ -110,33 +111,31 @@ function PulsingWaveform() {
   );
 }
 
-const steps = [
-  {
-    number: "01",
-    title: "Assessment",
-    description:
-      "Comprehensive vehicle inspection under calibrated studio lighting. Every imperfection mapped, measured, and documented before a single tool touches the surface.",
-    Animation: RotatingMotif,
-  },
-  {
-    number: "02",
-    title: "Correction",
-    description:
-      "Multi-stage machine polishing with precision compounds. Paint depth measured at every stage — we remove only what's necessary to reveal the perfect finish beneath.",
-    Animation: ScanningLaser,
-  },
-  {
-    number: "03",
-    title: "Protection",
-    description:
-      "Professional-grade ceramic coating applied in controlled conditions. Multiple layers cured individually for maximum bond strength and years of durable protection.",
-    Animation: PulsingWaveform,
-  },
-];
-
 export default function Protocol() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
+  const { t } = useTranslation();
+
+  const steps = [
+    {
+      number: "01",
+      title: t("protocol.step01.title"),
+      description: t("protocol.step01.description"),
+      Animation: RotatingMotif,
+    },
+    {
+      number: "02",
+      title: t("protocol.step02.title"),
+      description: t("protocol.step02.description"),
+      Animation: ScanningLaser,
+    },
+    {
+      number: "03",
+      title: t("protocol.step03.title"),
+      description: t("protocol.step03.description"),
+      Animation: PulsingWaveform,
+    },
+  ];
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -169,10 +168,10 @@ export default function Protocol() {
   return (
     <section id="protocol" ref={sectionRef} className={styles.section}>
       <div className={styles.header}>
-        <p className={styles.label}>The Process</p>
+        <p className={styles.label}>{t("protocol.label")}</p>
         <h2 className={styles.title}>
-          Three steps to{" "}
-          <span className={styles.titleAccent}>flawless.</span>
+          {t("protocol.title")}{" "}
+          <span className={styles.titleAccent}>{t("protocol.titleAccent")}</span>
         </h2>
       </div>
 
@@ -190,7 +189,7 @@ export default function Protocol() {
             </div>
 
             <div className={styles.stepContent}>
-              <span className={styles.stepNumber}>STEP {step.number}</span>
+              <span className={styles.stepNumber}>{t("protocol.step")} {step.number}</span>
               <h3 className={styles.stepTitle}>{step.title}</h3>
               <p className={styles.stepDescription}>{step.description}</p>
             </div>

@@ -1,0 +1,59 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0.1rem;
+  transition: color 300ms ease;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
+.btn:hover {
+  color: var(--champagne-glow);
+}
+
+.btnActive {
+  color: var(--champagne);
+}
+
+.divider {
+  user-select: none;
+}
+
+/* Dark variant (on obsidian/dark background) */
+.toggleDark .btn {
+  color: rgba(250, 248, 245, 0.4);
+}
+
+.toggleDark .btn.btnActive {
+  color: var(--champagne);
+}
+
+.toggleDark .divider {
+  color: rgba(250, 248, 245, 0.25);
+}
+
+/* Light variant (on cream/light background) */
+.toggleLight .btn {
+  color: rgba(42, 42, 53, 0.5);
+}
+
+.toggleLight .btn.btnActive {
+  color: var(--champagne-dim);
+}
+
+.toggleLight .divider {
+  color: rgba(42, 42, 53, 0.3);
+}
